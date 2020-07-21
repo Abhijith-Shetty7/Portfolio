@@ -276,11 +276,14 @@ body {
   color: black;
   font-size: 1.2vw;
 }
+#cont table{
+	font-size: 1.2vw;
+}
 
 .contact {
   color: black;
 	text-decoration:none;
-  text-shadow: 0 5px 10px rgba(0, 0, 0, 1);
+	font-family: roboto;
 }
 
 /* timeline*/
@@ -478,7 +481,7 @@ body {
   text-align: right;
   color: white;
   height: 1vw;
-  font-size: 1vw;
+  font-size: 1.5vw;
 }
 
 .glow {
@@ -569,8 +572,11 @@ body {
 /* third part - project.html*/
 .card-body {
   width: 100%;
-  height: 48vw;
-  display: flex;
+  height: auto;
+  display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+	grid-gap: 1rem;
   align-items: center;
   justify-content: center;
   overflow: hidden;
@@ -578,8 +584,7 @@ body {
 
 .card {
   display: grid;
-  grid-template-columns: 25vw;
-  grid-template-rows: 16vw 14vw 4vw;
+  grid-template-rows: 13.5rem 10rem 3.5rem;
   grid-template-areas: "image""text""stats";
   border-radius: 18px;
   background: white;
@@ -588,7 +593,7 @@ body {
   text-align: center;
   transition: 0.5s ease;
   cursor: pointer;
-  margin: 3vw;
+  margin: 3rem;
 }
 
 .card-image {
@@ -601,23 +606,23 @@ body {
 
 .card-text {
   grid-area: text;
-  margin: 1vw;
+  margin: 1rem;
 }
 
 .card-text .date {
   color: rgb(255, 7, 110);
-  font-size: 1vw;
+  font-size: 1rem;
 }
 
 .card-text p {
   color: grey;
-  font-size: 1vw;
+  font-size: 1rem;
   font-weight: 300;
 }
 
 .card-text h2 {
   margin-top: 0;
-  font-size: 2vw;
+  font-size: 2rem;
 }
 
 .card-stats {
@@ -625,15 +630,15 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-  grid-template-rows: 4vw;
+  grid-template-rows: 3.5rem;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
 }
 
 .card-stats .stat {
   position: relative;
-  height: 2vw;
-  padding: 1vw;
+  height: 2.3rem;
+  padding: 1rem;
   padding-top:
   display: flex;
   align-items: center;
@@ -643,7 +648,8 @@ body {
 }
 
 .card-stats .stat .fa {
-  position: absolute;
+  position: relative;
+	justify-content: center;
 }
 
 .card:hover {
@@ -674,47 +680,48 @@ body {
 /* certificate */
 .card-body-certificate {
   width: 100%;
-  height: 48vw;
-  display: flex;
-  align-items: center;
+	display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+	align-items: center;
+	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+	grid-gap: 1rem;
   justify-content: center;
   overflow: hidden;
 }
 
 .card-certificate {
   display: grid;
-  grid-template-columns: 27vw;
-  grid-template-rows: 19vw 16vw;
+  grid-template-rows: 14rem 13.5rem;
   grid-template-areas: "image""text";
-  border-radius: 2vw;
+  border-radius: 1.5rem;
   background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
   font-family: roboto;
   text-align: center;
   transition: 0.5s ease;
   cursor: pointer;
-  margin: 2vw
+  margin: 3rem;
 }
 
 .card-image-certificate {
   grid-area: image;
   background: url("images/Data Visualization Nanodegree.png");
-  border-top-left-radius: 1vw;
-  border-top-right-radius: 1vw;
-  margin-bottom: -1.5vw;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+  margin-bottom: -2.3rem;
   background-size: cover;
 }
 
 .card-text-certificate {
   grid-area: text;
-  margin: 1.6vw;
-  margin-top: 3vw;
+  margin: 1.6rem;
+  margin-top: 3rem;
   text-shadow: 0 5px 10px rgba(0, 0, 0, 1);
 }
 
 .card-text-certificate p {
   color: white;
-  font-size: 1.1vw;
+  font-size: 0.9rem;
   font-weight: 200;
   text-align: center;
 }
@@ -722,7 +729,8 @@ body {
 .card-text-certificate h2 {
   color: white;
   margin-top: 0;
-  font-size: 1.4vw;
+  font-size: 1.2rem;
+	font-weight: 900;
 }
 
 .card-certificate:hover {
@@ -772,27 +780,34 @@ body {
   background-size: cover;
 }
 
+/*card9*/
+.card-image-certificate.card9-certificate {
+  background: url("images/Applied Machine Learning.png");
+  background-size: cover;
+}
+
 /* Footer */
 #footer {
+  position: relative;
   background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
 }
 
 #footer .brand1 {
   color: white;
-  font-size: 1vw;
+  font-size: 0.8rem;
   font-weight: 900;
   text-align: center;
 }
 
 #footer .brand2 {
   color: white;
-  font-size: 1vw;
+  font-size: 0.5rem;
   font-weight: lighter;
   text-align: center;
 }
 
 #footer .footer {
-  height: 3vw;
+  height: 1.8rem;
   flex-direction: column;
   justify-content: center;
 }
