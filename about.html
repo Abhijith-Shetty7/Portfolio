@@ -1,53 +1,40 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
 
 <head>
-  <meta charset='UTF-8'>
-  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="HandheldFriendly" content="true">
-  <title>Portfolio Website - Abhijith Shetty</title>
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
+  <title>My Website</title>
 </head>
 
 <body>
-  <div class="container">
-    <div class="nav-wrapper">
-      <div class="left-side">
-        <div class="dropdown">
-          <button onclick="myFunction()" class="dropbtn"> &#9776; </button>
-          <div id="myDropdown" class="dropdown-content">
-            <a href="about.html#cont"><i style="font-size:2vw" class="fa">&#9993;</i></a>
-            <a href="https://www.linkedin.com/in/abhijith-shetty-394a5673"><i style="font-size:2vw" class="fa">&#xf08c;</i></a>
-            <a href="https://github.com/Abhijith-Shetty7"><i style="font-size:2vw" class="fa">&#xf09b;</i></a>
-          </div>
-        </div>
-
-        <div class="nav-link-wrapper">
-          <a href="index.html">Home</a>
-        </div>
-
-        <div class="nav-link-wrapper active-nav-link">
-          <a href="about.html">About</a>
-        </div>
-
-        <div class="nav-link-wrapper">
-          <a href="project.html">Projects</a>
-        </div>
-
-        <div class="nav-link-wrapper">
-          <a href="certificate.html">Certificates</a>
-        </div>
-      </div>
-
-      <div class="right-side">
+  <!-- Header -->
+  <section id="header">
+    <div class="header container2">
+      <div class="nav-bar">
         <div class="brand">
-          <a href="index.html">ABHIJITH &nbsp;SHETTY</a>
+          <a href="index.html">
+            <h1>ABHIJITH SHETTY</h1>
+          </a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="index.html" data-after="Home" style="font-size: 1.3vw">Home</a></li>
+            <li><a href="about.html" style="font-size: 1.3vw">About</a></li>
+            <li><a href="project.html" style="font-size: 1.3vw">Projects</a></li>
+            <li><a href="certificate.html" style="font-size: 1.3vw">Certificate</a></li>
+            <li><a href="about.html#cont" style="font-size: 1.3vw">Contact</a></li>
+          </ul>
         </div>
       </div>
     </div>
+  </section>
+  <!-- End Header -->
+    <br>
     <br>
     <br>
 
@@ -81,9 +68,9 @@
           </section>
 
           <div id="contact" class="contact">
-            <p><b>Email</b> &nbsp;&nbsp;&nbsp;: <a href="mailto:abhijith.shetty@rwth-aachen.de"><i style="font-family: roboto; text-decoration:none;color: black;" class="fa">abhijith.shetty@rwth-aachen.de</i></a> <br>
-              <b>Github</b>&nbsp; : <a href="https://github.com/Abhijith-Shetty7"><i style="font-family: roboto;text-decoration:none; color: black;" class="fa">github.com/Abhijith-Shetty7</i></a> <br>
-              <b>Linkedin</b>: <a href="https://www.linkedin.com/in/abhijith-shetty-394a5673"><i style="font-family: roboto;text-decoration:none; color: black;" class="fa">www.linkedin.com/in/abhijith-shetty-394a5673</i></a>
+            <p><b>Email</b> &nbsp;&nbsp;&nbsp;: <a href="mailto:abhijith.shetty@rwth-aachen.de"><i style="font-family: roboto; text-decoration:none; color: black" class="fa">abhijith.shetty@rwth-aachen.de</i></a> <br>
+              <b>Github</b>&nbsp; : <a href="https://github.com/Abhijith-Shetty7"><i style="font-family: roboto; text-decoration:none; color: black" class="fa">github.com/Abhijith-Shetty7</i></a> <br>
+              <b>Linkedin</b>: <a href="https://www.linkedin.com/in/abhijith-shetty-394a5673"><i style="font-family: roboto; text-decoration:none; color: black" class="fa">www.linkedin.com/in/abhijith-shetty-394a5673</i></a>
             </p>
           </div>
 
@@ -102,7 +89,7 @@
       <div class="container left">
         <div class="content">
           <h2>2020</h2>
-          <p><b> • M.Sc. Management and Engineering in Computer Aided Mechanical Engineering</b><br>&nbsp;&nbsp;&nbsp;RWTH Aachen University, Deutschland. <br>
+          <p><b> • M.Sc. Management and Engineering in Computer &nbsp;&nbsp;&nbsp;Aided Mechanical Engineering</b><br>&nbsp;&nbsp;&nbsp;RWTH Aachen University, Deutschland. <br>
             <b> • Master Thesis</b><br>&nbsp;&nbsp;&nbsp;Data Analytics, Enlyze GmbH, Aachen. <br>
             <b> • Data Scientist Nanodegree Program, Udacity.</b><br>&nbsp;&nbsp;&nbsp;Tools/Libraries - Git, PostgreSQL, Pandas, NLTK. <br>
             <b> • Data Engineering Nanodegree Program, Udacity.</b> <br>&nbsp;&nbsp;&nbsp;Tools/Libraries used - AWS services (EC2, EMR, S3, &nbsp;&nbsp;&nbsp;&nbsp;Redshift), Airflow, PySpark.
@@ -152,6 +139,7 @@
 
   <!-- Skillset -->
   <section id="skill">
+    <br>
     <div class="head2">
       <h2>My Knowledge</h2>
     </div>
@@ -370,6 +358,7 @@
       <div class="brand2">Copyright © 2020 Abhijith Shetty. All rights reserved</div>
     </div>
   </section>
+  <script src="./app.js"></script>
 </body>
 
 </html>
