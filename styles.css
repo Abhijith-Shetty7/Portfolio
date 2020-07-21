@@ -683,7 +683,7 @@ body {
 	display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 	align-items: center;
-	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(430px, 1fr));
 	grid-gap: 1rem;
   justify-content: center;
   overflow: hidden;
@@ -691,7 +691,7 @@ body {
 
 .card-certificate {
   display: grid;
-  grid-template-rows: 14rem 13.5rem;
+  grid-template-rows: 14rem 14rem;
   grid-template-areas: "image""text";
   border-radius: 1.5rem;
   background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
