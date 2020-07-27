@@ -592,7 +592,6 @@ body {
   font-family: roboto;
   text-align: center;
   transition: 0.5s ease;
-  cursor: pointer;
   margin: 3rem;
 }
 
